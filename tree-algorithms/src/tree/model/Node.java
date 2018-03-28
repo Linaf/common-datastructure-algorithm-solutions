@@ -2,26 +2,19 @@ package tree.model;
 
 public class Node {
 	private Data data;
-	private Node left;
-	private Node right;
+	private Node next;
 	public Data getData() {
 		return data;
 	}
 	public void setData(Data data) {
 		this.data = data;
 	}
-	public Node getLeft() {
-		return left;
+	public Node getNext() {
+		return next;
 	}
-	public void setLeft(Node left) {
-		this.left = left;
+	public void setNext(Node next) {
+		this.next = next;
 	}
-	public Node getRight() {
-		return right;
-	}
-	public void setRight(Node right) {
-		this.right = right;
-	}
-	
+
 
 }

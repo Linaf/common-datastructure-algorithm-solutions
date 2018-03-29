@@ -3,21 +3,23 @@ package linkedlist;
 import tree.model.Node;
 
 public class RemoveDuplicateWithRunner {
-
 	
 	public static void removeDuplicateWithRunner(Node head) {
 		if(head==null || head.getNext()==null)
 			return;
-		//{1,3,2,4,1,2,9}	
-		//{1,5,2,2,2}
 		Node current= head;
 		while(current!=null) {
-			for(Node tmp=current.getNext(),previous=current; tmp!=null;tmp=tmp.getNext(),previous=previous.getNext()) {
+			Node temp1=current.getNext(),temp2=current;
+			while(temp1!=null) {
 		    	
-				if(tmp==current) {
-		    		 previous.setNext(tmp.getNext());
-		    		 
-		    	 }
+				if(temp1==current) {
+		    		 temp2.setNext(temp1.getNext());
+		    		 temp1=temp1.getNext();
+		    		 if(temp1==null)
+		    			 break;
+		    		}
+				temp1=temp1.getNext();
+				temp2=temp2.getNext();
 		     }
 			current=current.getNext();
 		}

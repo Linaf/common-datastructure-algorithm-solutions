@@ -1,17 +1,11 @@
 package linkedlist;
 
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Objects;
-
 import tree.model.Node;
 
 public class RemoveDuplicateWithRunner {
 
 	
-	public static void removeDuplicate(Node head) {
+	public static void removeDuplicateWithRunner(Node head) {
 		if(head==null || head.getNext()==null)
 			return;
 		//{1,3,2,4,1,2,9}	

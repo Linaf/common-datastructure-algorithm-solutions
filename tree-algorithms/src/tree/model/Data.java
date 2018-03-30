@@ -1,22 +1,22 @@
 package tree.model;
 
-public class Data {
-	private String key;
-	public String getKey() {
+public class Data<T> {
+	private T key;
+	public T getKey() {
 		return key;
 	}
 
-	public void setKey(String key) {
+	public void setKey(T key) {
 		this.key = key;
 	}
 
-	private String data;
+	private T data;
 
-	public String getData() {
+	public T getData() {
 		return data;
 	}
 
-	public void setData(String data) {
+	public void setData(T data) {
 		this.data = data;
 	}
 	

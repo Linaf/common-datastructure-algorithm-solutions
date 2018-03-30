@@ -1,15 +1,13 @@
 package linkedlist;
 
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Objects;
 
-import tree.model.Node;
 
 public class RemoveDuplicate {
-
+	
 	//need refactor with generic Type LinkedList as an argument
 	public static void removeDuplicate(LinkedList<String> list) {
 		if(list.isEmpty() || list.size()==1)

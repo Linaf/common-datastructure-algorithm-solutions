@@ -1,12 +1,12 @@
 package tree.model;
 
 public class Node {
-	private Data data;
+	private Data<String> data;
 	private Node next;
-	public Data getData() {
+	public Data<String> getData() {
 		return data;
 	}
-	public void setData(Data data) {
+	public void setData(Data<String> data) {
 		this.data = data;
 	}
 	public Node getNext() {

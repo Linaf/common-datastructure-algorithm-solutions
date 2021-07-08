@@ -4,7 +4,7 @@ import tree.model.Node;
 
 public class SearchNode {
 	
-	public static Node searchNodeByData(Node head, String key) {
+	public static Node searchNodeByKey(Node head, String key) {
 		Node temp=head;
 		while(temp!=null) {
 			if(temp.getData()!=null)
